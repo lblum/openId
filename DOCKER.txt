@@ -1,0 +1,18 @@
+Para crear los contenedores:
+
+docker-compose -f compose.yml up -d
+
+Acá va a dejar disponibles los siguientes contenedores:
+
+    - MySQL:    
+          - MYSQL_USER: keycloak_user
+          - MYSQL_PASSWORD: keycloak_password
+          - MYSQL_DATABASE: keycloak_db
+          - MYSQL_ROOT_PASSWORD: root_password
+          - PUERTO: 3366
+
+    - keycloak:
+          - KEYCLOAK_ADMIN: admin_user
+          - KEYCLOAK_ADMIN_PASSWORD : admin_password
+          - PUERTO: 8181
+    

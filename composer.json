@@ -1,0 +1,5 @@
+{
+    "require": {
+        "mohammad-waleed/keycloak-admin-client": "^0.33.0"
+    }
+}
